@@ -21,14 +21,24 @@ Cette application vise à accompagner les parents dans leurs démarches administ
 ## Installation
 
 ```bash
-git clone https://github.com/ton-orga/maison-autisme-app.git
-Installer les dépendances
+git clone https://github.com/ThomasGossuin/maison-autisme-app.git
 
 cd maison-autisme-app
 npm install
 Lancer l’application (avec Expo)
 
 npm start
+npm run android
+```
+
+## Build APK
+
+```bash
+npx expo run:android --variant release
+npx react-native build-android --mode=release
+
+cd android
+./gradlew assembleRelease
 ```
 
 ## Contribution
